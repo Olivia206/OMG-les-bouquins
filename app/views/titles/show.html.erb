@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @title.summary %>
+</p>
+
+<p>
+  <strong>Quote:</strong>
+  <%= @title.quote %>
+</p>
+
+<p>
+  <strong>Cover:</strong>
+  <%= @title.cover %>
+</p>
+
+<%= link_to 'Edit', edit_title_path(@title) %> |
+<%= link_to 'Back', titles_path %>

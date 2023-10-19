@@ -1,0 +1,7 @@
+<h1>Ajouter un livre <% if @author %>de <%= @author.firstname + " " + @author.name %><% end %>
+</h1>
+    
+
+<%= render 'form', book: @book %>
+
+<%= link_to 'Back', books_path %>
